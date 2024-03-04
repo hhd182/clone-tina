@@ -1,0 +1,80 @@
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+    float: right;
+}
+
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+
+#components-form-demo-normal-login .login-form-button {
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .login-text {
+        color: #000;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .login-description {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(43, 43, 43, .5);
+        margin-top: 10px;
+        margin-bottom: 24px;
+    }
+}
+
+.ant-form-item {
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 5px;
+        color: #242424;
+    }
+}
+
+.forgot-pass {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.btn-login-social {
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    border-radius: 8px;
+    justify-content: center;
+    color: #2b2b2b;
+    align-items: center;
+}
+
+.input-login {
+    height: 48px;
+}
+
+.text-router-register {
+    color: #0b3a82;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 3px;
+}

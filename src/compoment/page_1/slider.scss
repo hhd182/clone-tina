@@ -1,0 +1,32 @@
+.slick-list .slick-slide {
+    transform: scale(.9);
+    opacity: 0.3;
+    text-align: center;
+}
+
+.img-avt {
+    .avt-img {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-active {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    transition-duration: 0.5s !important;
+}
+
+.text-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 35px 60px 0 rgba(115, 188, 255, .1);
+}

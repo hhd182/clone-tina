@@ -1,0 +1,67 @@
+.group-fab-ldp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    bottom: 20%;
+    right: 0;
+    width: 55px;
+    height: auto;
+    overflow: hidden;
+    background-color: #dde6ed;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    transition: all .2s ease-out;
+    box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+
+    .btn-fab {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        right: 0;
+        cursor: pointer;
+        height: 50px;
+        padding-left: 16px;
+        transition: background-color .4s ease-in-out;
+
+        .title {
+            position: relative !important;
+            display: inline-block !important;
+            font-size: 14px;
+            margin-top: 4px;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .4s ease-in-out;
+        }
+
+        .icon-fab {
+            font-size: 18px;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            margin-right: 16px;
+            transition: color .4s ease-in-out;
+        }
+
+        &:hover {
+            background-color: #2b70fa;
+
+            .title,
+            .icon-fab {
+                color: #fff;
+            }
+        }
+    }
+
+    &:hover {
+        width: 140px;
+
+        .title {
+            visibility: unset;
+            opacity: 1;
+        }
+    }
+}
