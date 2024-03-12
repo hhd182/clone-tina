@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Page_one from './compoment/page_one.jsx'
+import PageOne from './compoment/page_one.jsx'
 import Login from './compoment/login.jsx'
+import Tina from './compoment/tina.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -12,11 +13,15 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/about",
-    element: <Page_one />,
+    element: <PageOne />,
   },
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/home",
+    element: <Tina />
   }
 ]);
 

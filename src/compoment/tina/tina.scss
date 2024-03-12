@@ -1,0 +1,116 @@
+.navbar-m {
+    background: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: inherit;
+    height: 60px;
+    position: sticky;
+    z-index: 999;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+
+    .img-nav {
+        width: 28%;
+        height: 28%;
+
+    }
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    background: inherit;
+    position: relative;
+    height: calc(100vh - 60px);
+    z-index: 998;
+    border-right: #dcdcdc 1px solid;
+
+    .sidebar-detail__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sidebar-detail {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+        font-size: 16px;
+
+        .sidebar-list {
+            .ant-menu-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+
+        .sidebar-items {
+            .ant-menu-item {
+                padding-left: 36px !important;
+            }
+        }
+    }
+}
+
+.sidebar-custom {
+    transition: all .4s ease;
+}
+
+.main {
+    width: calc(100vw - 80px);
+    position: fixed;
+    right: 0;
+    padding-left: 0;
+    background: inherit;
+
+    .no-company {
+        display: flex;
+        width: 600px;
+        padding: 30px 20px;
+        border: 1px solid #dddddd;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .051);
+        border-radius: 10px;
+        margin: 150px auto 0;
+
+        .title__no-company {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        .des__no-comapny {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 300;
+        }
+
+    }
+}
+
+.main.sidebar-open {
+    width: calc(100vw - 276px);
+}
+
+.ant-dropdown-menu-item:hover {
+    background-color: unset !important;
+}
+
+.list-noti {
+    min-width: 420px;
+    max-height: 500px px;
+    overflow-y: scroll;
+    box-shadow: 0 1px 0 0 #e4e8ee;
+    border-radius: 0 0 5px 5px;
+
+    .noti-empty {
+        margin: 0 8px;
+        font-size: 14px;
+        line-height: 1.5715;
+        text-align: center;
+    }
+}

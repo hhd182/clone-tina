@@ -21,7 +21,7 @@ import iconBackgroundTen from '../assets/img/icon-bg-ten.89fbfafa.png'
 import imgEle from '../assets/img/main-image-ele.png'
 import { CheckCircleFilled, DownloadOutlined, CheckOutlined, StarFilled, } from '@ant-design/icons'
 
-function Selection() {
+function PageOne() {
     return (
         <>
             <div id='top-page' className="max-h-0"></div>
@@ -366,7 +366,7 @@ function Selection() {
             <Benefit />
             <div className="h-[6.5rem]"></div>
             <section className='section-seven pt-10 pb-[80px] max-w-[112rem] mx-auto'>
-                <div className='section-seven-body w-full mx-auto relative'>
+                <div className='section-seven-body w-full mx-auto relative '>
                     <div className="img-phone pt-20">
                         <img className='hover:scale-105 duration-300' src={iphone_7} alt="Trải nghiệm ứng dụng mys" loading='lazy' style={{
                             color: "transparent",
@@ -402,7 +402,7 @@ function Selection() {
                     </div>
                 </div>
             </section>
-            <section className="section-night max-max-w-[112rem] mx-auto">
+            <section className="section-night max-w-[112rem] mx-auto">
                 <div className="flex flex-col justify-center items-center mt-20 background relative mx-auto">
                     <div className="px-6 w-10/12">
                         <div className="section-night-body pt-6 pb-12 gap-6 justify-center items-center flex flex-wrap">
@@ -501,4 +501,4 @@ function Selection() {
     )
 }
 
-export default Selection;
+export default PageOne;

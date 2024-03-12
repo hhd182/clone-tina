@@ -4,10 +4,10 @@ import icongg from '../../assets/img/iconGoogle.png'
 import { Button, Form, Input } from 'antd';
 import FormItem from 'antd/es/form/FormItem';
 
-
 function FormLogin({ handleChange, isLoggedIn }) {
 
     const onFinish = (values) => {
+
         console.log('Success:', values);
     };
     const onFinishFailed = (errorInfo) => {
@@ -81,8 +81,16 @@ function FormLogin({ handleChange, isLoggedIn }) {
                 </div>
             </Form.Item>
 
+            {/* <a href="/home">
+                <Button type="primary" htmlType="submit" className="login-form-button text-white font-semibold text-base p-2 rounded-md justify-center items-center w-full h-11 bg-[#2082ff] hover:bg-[#3d95ff]">
+                    Đăng nhập
+                </Button>
+            </a> */}
+
             <Button type="primary" htmlType="submit" className="login-form-button text-white font-semibold text-base p-2 rounded-md justify-center items-center w-full h-11 bg-[#2082ff] hover:bg-[#3d95ff]">
-                Đăng nhập
+                <a href="/home" className='block w-full h-full'>
+                    Đăng nhập
+                </a>
             </Button>
 
             <Button className='btn-login-social h-11 bg-white'>

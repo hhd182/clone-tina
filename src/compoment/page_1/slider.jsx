@@ -20,8 +20,8 @@ function CenterMode() {
         variableWidth: true,
     };
     return (
-        <div className="slider-container">
-            <Slider {...settings}>
+        <div className="slider-container max-w-[112rem]">
+            <Slider {...settings} className="">
                 <div style={{ width: 700 }}>
                     <div className="slider-page slider-active" >
                         <div className="slider" style={{ width: "100%" }}>
